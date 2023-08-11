@@ -62,10 +62,17 @@ transition: 0.3s;
     display: flex;
     width: auto;
     height: 480px;
+    margin-top: 25px;
+    margin-left: 2%;
 }
 .image-wrapper{
     width: 640px;
     height: 480px;
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
 }
 
 .image-about_us{
