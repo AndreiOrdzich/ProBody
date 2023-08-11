@@ -1,1 +1,98 @@
-body {background-color: aqua;}
+:root {
+    --bg-color1: #E6D7CE;
+    --bg-color2: #5b321f;
+    --bg-color3: #685e57;
+  }
+
+
+
+body {
+height: 100vh;
+margin: auto;}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 1280px;
+    height: auto;
+    margin:auto;
+    background-color: #685e57;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 60px;
+}
+
+.logo{
+width: 60px;
+height: 60px;
+background-image: url('./assets/img/svg/logo_1.png');
+background-size: contain;
+background-repeat: no-repeat;
+cursor: pointer;
+transition: 0.3s;
+
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+   
+    
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: 10%;
+}
+
+.nav-item{
+    font-size: 24px;
+    color: var(--bg-color2);
+    cursor: pointer;
+}
+
+.section{
+    display: flex;
+    width: auto;
+    height: 480px;
+}
+.image-wrapper{
+    width: 640px;
+    height: 480px;
+}
+
+.image-about_us{
+    background-image: url('./assets/img/JPG/IMG_20221019_183044_887.JPG');
+    background-position: center;
+    background-size: cover;
+}
+.image-we_offer{
+    background-image: url('./assets/img/JPG/IMG_20221019_183538_820.JPG');
+    background-position: center;
+    background-size: cover;
+}
+.image-portfolio{
+    background-image: url('./assets/img/JPG/IMG_20210920_160042_543.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.image-contacts{
+    background-image: url('./assets/img/JPG/logo_2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.text-wrapper{
+    width: 600px;
+    height: 460px;
+    margin-left: 10%;
+}
+.text-content{
+color: antiquewhite;
+}
