@@ -8,6 +8,32 @@
     
   }
 
+/* buttons */
+.light-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 70px;
+    width: 237px;
+    background-color: var(--bg-color1);
+    border: 1px solid, black;
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+}
+
+
+.button-text{
+    margin-left: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--button-text);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/* end buttons */
 
 
 body { height: 100%;
@@ -261,6 +287,15 @@ h2{
     margin-top: 119px;
   
 }
+.we-offer-button-rectangle{
+    width: 36px;
+    height: 36px;
+    margin-left: 21px;
+    background-image: url(./assets/img/svg/clock\ 1.svg);
+    background-repeat: no-repeat;
+
+}
+
 
 .we_offer-content{
     display:c flex;
@@ -272,45 +307,30 @@ h2{
    
 }
 
-.we_offer-button{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 70px;
-    width: 237px;
-    background-color: var(--bg-color1);
-    border: 1px solid, black;
-    border-radius: 35px;
-    -webkit-border-radius: 35px;
-    -moz-border-radius: 35px;
-    -ms-border-radius: 35px;
-    -o-border-radius: 35px;
-}
-
-.button-rectangle{
-    width: 36px;
-    height: 36px;
-    margin-left: 21px;
-    background-image: url(./assets/img/svg/clock\ 1.svg);
-    background-repeat: no-repeat;
-
-}
-
-.button-text{
-    margin-left: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: var(--button-text);
-    font-weight: 400;
-    font-size: 20px;
-}
-
 
 .we_offer-second-image{
+    position: relative;
     width: 865px;
     height: 649px;
-    margin-top: 118px;
+    top: -326px;
+    margin-top: 50px;
     background-image: url(./assets/img/JPG/IMG_20210920_160034_118.jpg);
     background-size: contain;
+}
+
+.we_offer-rectangle{
+    position: relative;
+    width: 497px;
+    height: 320px;
+    transform: rotate(25deg);
+    left: 650px;
+    top: -119px;
+    background-image: url(./assets/img/svg/Frame-semi-cirkle.svg);
+    background-repeat: no-repeat;
+    -webkit-transform: rotate(25deg);
+    -moz-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    -o-transform: rotate(25deg);
 }
 
 .footer{
