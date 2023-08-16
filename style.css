@@ -5,6 +5,7 @@
     --main-color1: rgba(236, 216, 189, 1);
     --main-fill: rgba(236, 216, 189, 0.15);
     --button-text:rgba(33, 33, 33, 1);
+    --main-color-black:rgba(33, 33, 33, 1)
     
   }
 
@@ -15,8 +16,26 @@
     align-items: center;
     height: 70px;
     width: 237px;
+    cursor: pointer;
     background-color: var(--bg-color1);
-    border: 1px solid, black;
+    border: 1px solid black;
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+}
+
+.dark-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 237px;
+    cursor: pointer;
+    background-color: var(--main-color1);
+    border: 1px solid black;
     border-radius: 35px;
     -webkit-border-radius: 35px;
     -moz-border-radius: 35px;
@@ -226,10 +245,6 @@ align-items: center;
     width: 600px;
     height: 480px;
     border-radius: 5%;
-    /* background: rgba(255, 255, 255, 0.192); */
-    /* backdrop-filter: blur(2px);
-    border: 1px solid rgba(43, 43, 43, 0.568);
-  */
 }
 
 
@@ -254,6 +269,15 @@ h2{
   margin-top: 99px; 
 }
 
+.subtitle-text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
 .we_offer-title{
     width: 780px;
 }
@@ -261,11 +285,6 @@ h2{
 
 .we_offer-text{
     width: 600px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgba(255, 255, 255, 1);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
     margin-bottom: 37px;
 
 }
@@ -312,7 +331,7 @@ h2{
     position: relative;
     width: 865px;
     height: 649px;
-    top: -326px;
+    top: -319px;
     margin-top: 50px;
     background-image: url(./assets/img/JPG/IMG_20210920_160034_118.jpg);
     background-size: contain;
@@ -332,6 +351,116 @@ h2{
     -ms-transform: rotate(25deg);
     -o-transform: rotate(25deg);
 }
+
+
+
+
+
+
+
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 1026px;
+    background-color: var(--main-color1);
+}
+.title-dark{
+   text-align: center;
+   color: rgba(33, 33, 33, 1);
+   font-weight: 700;
+   margin-bottom: 10px;
+}
+
+.portfolio-subtitle{
+    color: rgba(125, 86, 32, 1);
+    text-align: center;
+}
+.portfoli-slider-left-button{
+    width: 30px;
+    height: 30px;
+    background-image: url(./assets/img/png/next\ \(1\)\ 2.png);
+}
+.portfoli-slider-right-button{
+    width: 30px;
+    height: 30px;
+    background-image: url(./assets/img/png/next\ \(1\)\ 1.png);
+}
+
+.portfolio-slider-kard-wrapper{
+    display: flex;
+    flex-direction: row;
+    height: 480px;
+    margin-top: 77px;
+    
+
+}
+
+.portfolio-slider-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.portfolio-slider-kard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    height: 480px;
+    margin-left: 20px;
+    margin-right: 20px;
+   
+}
+
+.card-image{
+    width: 280px;
+    height: 380px;
+    background-size: cover;
+}
+
+.card-image1{
+    background-image: url(./assets/img/JPG/IMG_20220217_191427_476.jpg);
+}
+
+.card-image2{
+    background-image: url(./assets/img/JPG/IMG_20221019_183402_241.JPG);
+}
+
+.card-image3{
+    background-image: url(./assets/img/JPG/IMG_20211001_165531_239.jpg);
+}
+
+.card-image4{
+    background-image: url(./assets/img/JPG/IMG_20221019_183004_389.JPG);
+}
+
+.card-image5{
+    background-image: url(./assets/img/JPG/IMG_20221019_182901_486.JPG);
+}
+
+.portfolio-slider-card-name span{
+    font-family: 'Amabile', sans-serif ;
+    color: var(--main-color-black);
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 1.5;
+}
+
+.portfolio-slider-card-prise span{
+    font-family: 'Amabile', sans-serif ;
+    color: var(--main-color-black);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.5;
+}
+.portfolio-button-dark{
+margin-left: auto;
+margin-right: auto;
+}
+
+
 
 .footer{
     display: flex;
