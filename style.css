@@ -1,3 +1,33 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Работает в Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(236, 216, 189, 1); #5b321f;
+  }
+  
+  /* Работает в Chrome, Edge и Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: rgba(236, 216, 189, 1);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #5b321f;
+    border-radius: 20px;
+    border: 1px solid rgba(236, 216, 189, 1);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+
 :root {
     --bg-color1: #E6D7CE;
     --bg-color2: #5b321f;
@@ -269,6 +299,24 @@ h2{
   margin-top: 99px; 
 }
 
+h3{
+    font-family: 'Amabile', sans-serif ;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.5;
+     text-align: left;
+}
+
+p{
+    font-family: 'Amabile', sans-serif ;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: left;
+}
+
 .subtitle-text{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgba(255, 255, 255, 1);
@@ -474,22 +522,72 @@ margin-right: auto;
     background-image: url(./assets/img/png/Group\ 6\ new.png);
 }
 
-.blog-text-content{
-   margin-left: auto;
-   margin-right: auto;
+.blog-title{
+    margin-left: auto;
+    margin-right: auto;
+ 
+}
+.blog-text-wrapper{
+    width: 800px;
 }
 
-.image-blog{
-    width: 800px;
-    height: 800px;
-    margin-top: 20px;
-    background-image: url(./assets/img/JPG/IMG_20220320_201022_944.jpg);
-    background-size: cover;
+.blog-text-content{
+    margin-top: 10%;
+   margin-left: auto;
+   margin-right: auto;
 }
 .blog-start{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+.image-blog1{
+    position: relative;
+    left: -65px;
+    top: -210px;
+    width: 300px;
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    background-image: url(./assets/img/JPG/IMG_20221019_183004_389.JPG);
+    background-size: cover;
+}
+
+.image-blog2{
+    position: relative;
+    left: 65px;
+    top: 13px;
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    background-image: url(./assets/img/JPG/IMG_20220320_201022_944.jpg);
+    background-size: cover;
+}
+
+.blog-news1-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+.blog-news1{
+    display: flex;
+    flex-direction: row;
+    height: 480px;
+    width: 50%;
+    margin: 1.5%;
+}
+
+.blog-news1-image{
+    display: flex;
+    width: 280px;
+    height: 380px;
+    background-image: url(./assets/img/JPG/IMG_20211001_165531_239.jpg);
+    background-size: cover;
+}
+.blog-news1-text-wrapper{
+    margin-left: 5%;
+}
+.blog-news1-text{
+    width: 500px;
 }
 
 .footer{
