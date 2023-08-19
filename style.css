@@ -516,8 +516,7 @@ margin-right: auto;
 .blog{
     display: flex;
     flex-direction: column;
-
-    height: 1486px;
+    height: 1550px;
     width: auto;
     background-image: url(./assets/img/png/Group\ 6\ new.png);
 }
@@ -589,6 +588,82 @@ margin-right: auto;
 .blog-news1-text{
     width: 500px;
 }
+
+.price{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 1072px;
+    background-color: var(--main-color1);
+}
+
+.price-title h2{
+    margin-top: 0px;
+}
+.price-subtitle{
+    color: rgba(125, 86, 32, 1);
+    text-align: center;
+}
+
+.price-cards-wrapper{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   height: 760px;
+}
+
+.price-cards-content{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: auto;
+    background-color: #685e57;
+    padding: 1%;
+    margin: 1%;
+}
+.price-cards-content-subwrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+   justify-content: space-between;
+    margin-bottom: 2%;
+    
+}
+.prise-card-content-subcontent{
+    width: 70%;
+}
+
+.price-cards-content-subwrapper span{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+ 
+  font-weight: 900;
+  font-size: 26px;
+}
+.price-cards-content-title{
+    margin: 0%;
+}
+
+.price-cards-content-text{
+   margin: 0%;
+}
+
+.prise-subconteiner{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
 
 .footer{
     display: flex;
