@@ -597,6 +597,33 @@ margin-right: auto;
     background-color: var(--main-color1);
    
 }
+.prise-rectangle{
+    position: relative;
+   
+}
+.prise-rectangle::after{
+content: "";
+  position: absolute;
+  left: 50px;
+  top: -21px;
+  width: 200px;
+  height: 200px;
+  background-image: url('./assets/img/svg/spa-stone.svg');  
+}
+
+.prise-rectangle2{
+    position: relative;
+   
+}
+.prise-rectangle2::after{
+content: "";
+  position: absolute;
+  left: 1670px;
+  top: 810px;
+  width: 200px;
+  height: 200px;
+  background-image: url('./assets/img/svg/logotype-for-a-spa.svg');  
+}
 
 .price-title h2{
     margin-top: 0px;
