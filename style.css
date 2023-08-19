@@ -5,7 +5,7 @@ html {
 /* Работает в Firefox */
 * {
     scrollbar-width: thin;
-    scrollbar-color: rgba(236, 216, 189, 1); #5b321f;
+    scrollbar-color: rgba(236, 216, 189, 1) #5b321f;
   }
   
   /* Работает в Chrome, Edge и Safari */
@@ -659,7 +659,7 @@ content: "";
     flex-wrap: wrap;
     flex-direction: row;
    justify-content: space-between;
-    margin-bottom: 2%;
+    margin-bottom: 10px;
     
 }
 .prise-card-content-subcontent{
