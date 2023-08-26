@@ -577,11 +577,30 @@ margin-right: auto;
 
 .blog-news1-image{
     display: flex;
-    width: 280px;
+    width: 360px;
     height: 380px;
-    background-image: url(./assets/img/JPG/IMG_20211001_165531_239.jpg);
+}
+
+.blog-news1-image1{
+    background-image: url(./assets/img/img_blog/sport_massag.jpg);
     background-size: cover;
 }
+
+.blog-news1-image2{
+    background-image: url(./assets/img/img_blog/foot_massage.jpg);
+    background-size: cover;
+}
+
+.blog-news1-image3{
+    background-image: url(./assets/img/img_blog/massotherapy.jpg);
+    background-size: cover;
+}
+
+.blog-news1-image4{
+    background-image: url(./assets/img/img_blog/wellness_massage.jpg);
+    background-size: cover;
+}
+
 .blog-news1-text-wrapper{
     margin-left: 5%;
 }
