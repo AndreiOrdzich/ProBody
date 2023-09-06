@@ -56,6 +56,14 @@ html {
     -o-border-radius: 35px;
 }
 
+.light-button:hover{
+  background-color: #ffd700;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+}
 .dark-button{
     display: flex;
     flex-direction: row;
@@ -71,6 +79,15 @@ html {
     -moz-border-radius: 35px;
     -ms-border-radius: 35px;
     -o-border-radius: 35px;
+}
+
+.dark-button:hover{
+    background-color: #ffd700;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
 }
 
 
@@ -516,9 +533,10 @@ margin-right: auto;
 .blog{
     display: flex;
     flex-direction: column;
-    height: 1550px;
+    height:auto;
     width: auto;
     background-image: url(./assets/img/png/Group\ 6\ new.png);
+    background-size: cover;
 }
 
 .blog-title{
@@ -606,6 +624,10 @@ margin-right: auto;
 }
 .blog-news1-text{
     width: 500px;
+}
+
+.blog-button-dark{
+    margin: auto;
 }
 
 .price{
