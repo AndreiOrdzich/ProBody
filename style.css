@@ -634,8 +634,11 @@ margin-right: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 1316px;
+    height: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--main-color1);
+   
    
 }
 .prise-rectangle{
