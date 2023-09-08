@@ -57,7 +57,7 @@ html {
 }
 
 .light-button:hover{
-  background-color: #ffd700;
+  background-color: #BDAE82;
   transition: .5s;
   -webkit-transition: .5s;
   -moz-transition: .5s;
@@ -74,22 +74,49 @@ html {
     cursor: pointer;
     background-color: var(--main-color1);
     border: 1px solid black;
+    transition: 0.5s;
     border-radius: 35px;
     -webkit-border-radius: 35px;
     -moz-border-radius: 35px;
     -ms-border-radius: 35px;
     -o-border-radius: 35px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
 }
 
 .dark-button:hover{
-    background-color: #ffd700;
-    transition: .5s;
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -ms-transition: .5s;
-    -o-transition: .5s;
+    box-shadow: 0 0.5em 0.5em -0.4em #ffa260;
+    transform: translatey(-0.5em);
+    -webkit-transform: translatey(-0.5em);
+    -moz-transform: translatey(-0.5em);
+    -ms-transform: translatey(-0.5em);
+    -o-transform: translatey(-0.5em);
+}
+.dark-button:hover::before {
+    box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ac9b08;
+    transform: translate3d(0, 0.3em, -1em);
+    -webkit-transform: translate3d(0, 0.3em, -1em);
+    -moz-transform: translate3d(0, 0.3em, -1em);
+    -ms-transform: translate3d(0, 0.3em, -1em);
+    -o-transform: translate3d(0, 0.3em, -1em);
 }
 
+
+.dark-button:active {
+    background: #b69b06;
+    transform: translate(0em, 0.15em);
+    -webkit-transform: translate(0em, 0.15em);
+    -moz-transform: translate(0em, 0.15em);
+    -ms-transform: translate(0em, 0.15em);
+    -o-transform: translate(0em, 0.15em);
+}
+
+.dark-button:active::before {
+    box-shadow: 0 0 0 2px #e9c705, 0 0 #caa914;
+    transform: translate3d(0, 0, -1em);
+}
 
 .button-text{
     margin-left: 30px;
@@ -533,8 +560,9 @@ margin-right: auto;
 .blog{
     display: flex;
     flex-direction: column;
-    height:auto;
+    height: 1740px;
     width: auto;
+    overflow: hidden;
     background-image: url(./assets/img/png/Group\ 6\ new.png);
     background-size: cover;
 }
@@ -629,6 +657,28 @@ margin-right: auto;
 .blog-button-dark{
     margin: auto;
 }
+
+.blog-big{
+  height: auto;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+.blog-news1-wrapper-visible{
+    order: 2;
+    display: none;
+}
+
+.button-visible{
+    order: 1;
+ 
+
+}
+
+
 
 .price{
     display: flex;
