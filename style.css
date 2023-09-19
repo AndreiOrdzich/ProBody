@@ -69,7 +69,7 @@ html {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 70px;
+  height: 70px;
     width: 237px;
     cursor: pointer;
     background-color: var(--main-color1);
@@ -560,11 +560,14 @@ margin-right: auto;
 .blog{
     display: flex;
     flex-direction: column;
-    height: 1740px;
+    height: 1940px;
     width: auto;
     overflow: hidden;
     background-image: url(./assets/img/png/Group\ 6\ new.png);
     background-size: cover;
+    -webkit-box-shadow: inset 0px -166px 90px -110px rgb(167 103 18 / 30%);
+    -moz-box-shadow: inset 0px -166px 90px -110px rgb(167 103 18 / 30%);
+    box-shadow: inset 0px -166px 90px -110px rgb(167 103 18 / 30%);
 }
 
 .blog-title{
@@ -612,6 +615,7 @@ margin-right: auto;
 .blog-news1-wrapper{
     display: flex;
     flex-direction: row;
+    
 }
 .blog-news1{
     display: flex;
@@ -625,6 +629,7 @@ margin-right: auto;
     display: flex;
     width: 360px;
     height: 380px;
+    cursor: pointer;
 }
 
 .blog-news1-image1{
@@ -647,6 +652,107 @@ margin-right: auto;
     background-size: cover;
 }
 
+.blog-news1-image5{
+    background-image: url(./assets/img/img_blog/klassic_massage.jpg);
+    background-size: cover;
+}
+
+.blog-news1-image6{
+    background-image: url(./assets/img/img_blog/wellness_massage.jpg);
+    background-size: cover;
+}
+
+.blog-news1-image7{
+    background-image: url(./assets/img/img_blog/wellness_massage.jpg);
+    background-size: cover;
+}
+
+
+.blog-news1-image8{
+    background-image: url(./assets/img/img_blog/wellness_massage.jpg);
+    background-size: cover;
+}
+
+
+.blog-news1-image9{
+    background-image: url(./assets/img/img_blog/wellness_massage.jpg);
+    background-size: cover;
+}
+
+
+
+.blog-news1-image10{
+    background-image: url(./assets/img/img_blog/anti_celulite.jpg);
+    background-size: cover;
+}
+
+
+
+.blog-news1-image11{
+    background-image: url(./assets/img/img_blog/wellness_massage.jpg);
+    background-size: cover;
+}
+
+
+
+.blog-news1-image12{
+    background-image: url(./assets/img/img_blog/wellness_massage.jpg);
+    background-size: cover;
+}
+
+
+
+.blog-news1-image13{
+    background-image: url(./assets/img/img_blog/limfo_drenage.jpg);
+    background-size: cover;
+}
+
+.blog-news1-image14{
+    background-image: url(./assets/img/img_blog/microcurrent_terapy.jpg);
+    background-size: cover;
+}
+
+.blog-news1-image15{
+    background-image: url(./assets/img/img_blog/wellness_massage.jpg);
+    background-size: cover;
+}
+
+.blog-news1-image16{
+    background-image: url(./assets/img/img_blog/wellness_massage.jpg);
+    background-size: cover;
+}
+
+.blog-news1-image17{
+    background-image: url(./assets/img/img_blog/wellness_massage.jpg);
+    background-size: cover;
+}
+
+.blog-news1-image18{
+    background-image: url(./assets/img/img_blog/wellness_massage.jpg);
+    background-size: cover;
+}
+
+
+.blog-news1-image19{
+    background-image: url(./assets/img/img_blog/wellness_massage.jpg);
+    background-size: cover;
+}
+
+.blog-news1-image20{
+    background-image: url(./assets/img/img_blog/cervical_collar_area.jpg);
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
 .blog-news1-text-wrapper{
     margin-left: 5%;
 }
@@ -655,6 +761,7 @@ margin-right: auto;
 }
 
 .blog-button-dark{
+    padding: 22px;
     margin: auto;
 }
 
@@ -669,7 +776,7 @@ margin-right: auto;
 
 .blog-news1-wrapper-visible{
     order: 2;
-    display: none;
+    opacity: 0.5;
 }
 
 .button-visible{
