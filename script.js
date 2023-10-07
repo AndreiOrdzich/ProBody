@@ -1,11 +1,29 @@
+//animation section blog 
+let body = document.querySelector('.body'); // все тело документа
+let mainContainer = document.querySelector('.container');
+let popupBg = document.querySelector('.popup-bg'); // Фон попап окна
+let popupClick = document.querySelectorAll('.blog-news1');
+let popupText = document.querySelectorAll('.blog-news1-text-wrapper');
+
+const blog = document.getElementById('blog');
+
+const sport = document.getElementById('sport');
+const legs = document.getElementById('legs');
+const massotherapy = document.getElementById('massotherapy');
+const wellness = document.getElementById('wellness');
+const back = document.getElementById('back');
+const anticellulite = document.getElementById('anticellulite');
+const limphatic = document.getElementById('limphatic');
+const microtherapy = document.getElementById('microtherapy');
+const neckcollar = document.getElementById('neck-collar');
 
 
 
+var lockPaddingValue = window.innerWidth - body.offsetWidth + 'px'; //подсчет толщины скролла
 const wrapper = document.querySelector('.blog');
 const button1 = document.querySelector('.blog-button-dark');
 const blogNewsVisible = document.querySelectorAll ('.blog-news1-wrapper-visible')
 const blogNews1Wrapper2 = document.querySelectorAll ('.blog-news1-wrapper2')
-
 
 function toggleBlog() {
    wrapper.classList.toggle('blog-big');
@@ -17,11 +35,88 @@ if (button1.textContent == 'ПОСМОТРЕТЬ ВСЁ') {
     button1.textContent = 'ПОСМОТРЕТЬ ВСЁ';
 }
 
-
-
-   
-
 }
 
 button1.addEventListener('click', toggleBlog);
 
+/*start Popup*/
+
+let selectedPopup;
+
+blog.onclick = function(event) {
+  let target = event.target; // где был клик?
+if (target.parentNode.classList.contains('sport')) {
+    popupBg.classList.add('active'); // Добавляем класс 'active' для фона
+    sport.classList.add('active'); // И для самого окна
+    document.body.style.overflowY = "hidden"; // убираем возможность прокручивать документ
+    body.style.paddingRight = lockPaddingValue;
+}
+if (target.parentNode.classList.contains('legs')) {
+    popupBg.classList.add('active'); // Добавляем класс 'active' для фона
+    legs.classList.add('active'); // И для самого окна
+    document.body.style.overflowY = "hidden"; // убираем возможность прокручивать документ
+    body.style.paddingRight = lockPaddingValue;
+}
+if (target.parentNode.classList.contains('massotherapy')) {
+    popupBg.classList.add('active'); // Добавляем класс 'active' для фона
+    massotherapy.classList.add('active'); // И для самого окна
+    document.body.style.overflowY = "hidden"; // убираем возможность прокручивать документ
+    body.style.paddingRight = lockPaddingValue;
+}
+if (target.parentNode.classList.contains('wellness')) {
+    popupBg.classList.add('active'); // Добавляем класс 'active' для фона
+    wellness.classList.add('active'); // И для самого окна
+    document.body.style.overflowY = "hidden"; // убираем возможность прокручивать документ
+    body.style.paddingRight = lockPaddingValue;
+}
+if (target.parentNode.classList.contains('back')) {
+    popupBg.classList.add('active'); // Добавляем класс 'active' для фона
+    back.classList.add('active'); // И для самого окна
+    document.body.style.overflowY = "hidden"; // убираем возможность прокручивать документ
+    body.style.paddingRight = lockPaddingValue;
+}
+if (target.parentNode.classList.contains('anticellulite')) {
+    popupBg.classList.add('active'); // Добавляем класс 'active' для фона
+    back.classList.add('active'); // И для самого окна
+    document.body.style.overflowY = "hidden"; // убираем возможность прокручивать документ
+    body.style.paddingRight = lockPaddingValue;
+}
+if (target.parentNode.classList.contains('limphatic')) {
+    popupBg.classList.add('active'); // Добавляем класс 'active' для фона
+    limphatic.classList.add('active'); // И для самого окна
+    document.body.style.overflowY = "hidden"; // убираем возможность прокручивать документ
+    body.style.paddingRight = lockPaddingValue;
+}
+if (target.parentNode.classList.contains('microtherapy')) {
+    popupBg.classList.add('active'); // Добавляем класс 'active' для фона
+    microtherapy.classList.add('active'); // И для самого окна
+    document.body.style.overflowY = "hidden"; // убираем возможность прокручивать документ
+    body.style.paddingRight = lockPaddingValue;
+}
+if (target.parentNode.classList.contains('neck-collar')) {
+    popupBg.classList.add('active'); // Добавляем класс 'active' для фона
+    neckcollar.classList.add('active'); // И для самого окна
+    document.body.style.overflowY = "hidden"; // убираем возможность прокручивать документ
+    body.style.paddingRight = lockPaddingValue;
+}
+};
+
+
+ document.addEventListener('click', (e) => { // Вешаем обработчик на весь документ
+     if (e.target === popupBg) { // Если цель клика - фон, то:
+        popupBg.classList.remove('active'); // Убираем активный класс с фона
+        sport.classList.remove('active');
+        legs.classList.remove('active'); 
+        massotherapy.classList.remove('active');
+        wellness.classList.remove('active');
+        back.classList.remove('active');
+        limphatic.classList.remove('active');
+        microtherapy.classList.remove('active');
+        neckcollar.classList.remove('active');
+        setTimeout(function() {
+            body.style.overflowY = "visible"; // возвращаем возможность прокрутки документа
+            body.style.paddingRight = '0px'; // возвращаем нулевой отступ для body
+        }, 500);
+    }
+});
+/*end Popup*/
