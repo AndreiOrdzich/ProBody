@@ -39,6 +39,42 @@ if (button1.textContent == 'ПОСМОТРЕТЬ ВСЁ') {
 
 button1.addEventListener('click', toggleBlog);
 
+/*start slider Portfolio*/
+
+
+
+new Swiper('.portfolio-slider-wrapper',{
+    navigation: {
+        nextEl: '.portfoli-slider-left-button',
+        prevEl: '.portfoli-slider-right-button'
+    }, 
+
+spaceBetween: 30,
+
+slidesPerView: 4,
+
+slidesPerGroup: 1,
+
+loop: true,
+
+autoHeight: true,
+
+autoplay: {
+    delay: 2000
+},
+
+speed: 1000,
+
+
+
+});
+
+/*end slider portfolio*/
+
+
+
+
+
 /*start Popup*/
 
 let selectedPopup;
