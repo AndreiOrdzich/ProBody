@@ -151,6 +151,45 @@ main {
   box-shadow: -1px 0px 25px 7px rgba(154, 126, 91, 1);
 
 }
+h1{
+    color: var(--main-color1);
+    font-family: 'Amabile';
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 1.5;
+  text-align: left;
+  margin-left:180px;
+  margin-top: 99px;
+}
+
+h2{
+    font-family: 'Amabile', sans-serif ;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.5;
+  text-align: left;
+  margin-top: 99px; 
+}
+
+h3{
+    font-family: 'Amabile', sans-serif ;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.5;
+     text-align: left;
+}
+
+p{
+    font-family: 'Amabile', sans-serif ;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: left;
+}
+
 .header {
     display: flex;
     flex-direction: row;
@@ -317,51 +356,21 @@ align-items: center;
 }
 
 
-h1{
-    color: var(--main-color1);
-    font-family: 'Amabile';
-    font-weight: 800;
-    font-size: 48px;
-    line-height: 1.5;
-  text-align: left;
-  margin-left:180px;
-  margin-top: 99px;
-}
-
-h2{
-    font-family: 'Amabile', sans-serif ;
-    color: rgba(255, 255, 255, 1);
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 1.5;
-  text-align: left;
-  margin-top: 99px; 
-}
-
-h3{
-    font-family: 'Amabile', sans-serif ;
-    color: rgba(255, 255, 255, 1);
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 1.5;
-     text-align: left;
-}
-
-p{
-    font-family: 'Amabile', sans-serif ;
-    color: rgba(255, 255, 255, 1);
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.5;
-    text-align: left;
-}
-
 .subtitle-text{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgba(255, 255, 255, 1);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
+}
+
+
+.we_offer{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 1550px;
+    background-image: url(./assets/img/png/Group\ 2.png);
 }
 
 
@@ -376,13 +385,7 @@ p{
 
 }
 
-.we_offer{
-    display: flex;
-    flex-direction: row;
-    width: auto;
-    height: 1420px;
-    background-image: url(./assets/img/png/Group\ 2.png);
-}
+
 
 .image-we_offer{
     width: 582px;
@@ -984,7 +987,7 @@ margin-right: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: auto;
+    height: 1290px;
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--main-color1);
@@ -1013,7 +1016,7 @@ content: "";
 content: "";
   position: absolute;
   left: 1670px;
-  top: 1033px;
+  top: 1110px;
   width: 200px;
   height: 200px;
   background-image: url('./assets/img/svg/logotype-for-a-spa.svg');  
