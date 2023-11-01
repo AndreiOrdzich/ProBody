@@ -25,6 +25,35 @@ const button1 = document.querySelector('.blog-button-dark');
 const blogNewsVisible = document.querySelectorAll ('.blog-news1-wrapper-visible')
 const blogNews1Wrapper2 = document.querySelectorAll ('.blog-news1-wrapper2')
 
+
+const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('.nav');
+const header = document.querySelector('.bg-opasity');
+const hero = document.querySelector('.section-hero');
+const navLinks = document.querySelectorAll('.nav-item'); // searches for all links with class nav-items
+
+
+function toggleMenu() {
+    body.classList.toggle('no-scroll')
+    hamburger.classList.toggle('open');
+    nav.classList.toggle('open');
+    header.classList.toggle('bg-opasity-visible');
+}
+hamburger.addEventListener('click', toggleMenu);
+
+/* Hiding menu on click< 768px */
+
+
+function closeMenu(event) {
+    body.classList.remove('no-scroll')
+    hamburger.classList.remove('open');
+    nav.classList.remove('open');
+    header.classList.remove('bg-opasity-visible');
+}
+
+navLinks.forEach((el) => el.addEventListener('click', closeMenu)); // click events are passed to the function
+
+
 function toggleBlog() {
    wrapper.classList.toggle('blog-big');
    blogNewsVisible.forEach((Element) => Element.classList.toggle('blog-news1-wrapper-visible'));
@@ -113,7 +142,7 @@ if (target.parentNode.classList.contains('back')) {
 }
 if (target.parentNode.classList.contains('anticellulite')) {
     popupBg.classList.add('active'); // Добавляем класс 'active' для фона
-    back.classList.add('active'); // И для самого окна
+    anticellulite.classList.add('active'); // И для самого окна
     document.body.style.overflowY = "hidden"; // убираем возможность прокручивать документ
     body.style.paddingRight = lockPaddingValue;
 }
