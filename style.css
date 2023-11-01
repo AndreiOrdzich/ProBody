@@ -157,7 +157,7 @@ body {
         height: max-content;
         margin: 0;
         padding: 0;
-        overflow-x: hidden;
+      
     }
     .no-scroll {
         overflow-y: hidden;
@@ -329,16 +329,7 @@ transition: 0.3s;
     align-items: center;
 }
 
-.nav.open {
-    display: flex;
-    right: -2768px;
-    transition: 1s;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -ms-transition: 1s;
-    -o-transition: 1s;
-    background-color: black;
-}
+
 
 .nav-item{
     font-size: 24px;
@@ -350,39 +341,42 @@ transition: 0.3s;
 
 @media (max-width: 768px) {
     .nav {
-        position: absolute;
+        position: fixed;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        margin-left: auto;
         top: 0px;
-        right: -2768px;
-        width: 768px;
-        height: 1016px;
+        right: -668px;
+        width: 420px;
+        height: 450px;
         z-index: 9;
         transition: 1s;
         -webkit-transition: 1s;
         -moz-transition: 1s;
         -ms-transition: 1s;
         -o-transition: 1s;
+        background-color: black;
     }
     .nav.open {
-        position: absolute;
+        position: fixed;
         top: 0px;
         left: 0px;
+        right: 0px;
         transition: 1s;
-        background-color: none;
-        -webkit-transition: 1s;
-        -moz-transition: 1s;
-        -ms-transition: 1s;
-        -o-transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    background-color: black;
     }
     .nav-item{
-        font-size: 38px;
+        font-size: 28px;
         font-family: 'celine-peach-free-sans', sans-serif;
         color: rgba(255, 255, 255, 1);
         cursor: pointer;
     }
 }
+
 
 @media (max-width: 550px) {
     .nav {
@@ -454,8 +448,6 @@ transition: 0.3s;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-right: 64px;
-        margin-left: 30px;
         margin-top: 25px;
         width: 60px;
         height: 50px;
